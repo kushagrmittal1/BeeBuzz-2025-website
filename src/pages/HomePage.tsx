@@ -113,7 +113,8 @@ export default function HomePage() {
         </p>
 
         <a
-          href="mailto:bd@beebuzz.co.in"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd4h0aDIi5hdXQzFDwWiNagrhRvYzgalKylhy7bhsVGIREvgg/viewform?usp=publish-editor"
+          target="_blank"
           ref={heroBtnRef}
           className="bg-orange-500 text-sm md:text-base px-4 md:px-10 py-2 md:py-3 rounded-full text-white hover:bg-orange-600 transition-colors mb-8 cursor-pointer"
         >
