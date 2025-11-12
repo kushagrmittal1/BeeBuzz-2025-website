@@ -85,7 +85,7 @@ export default function HomePage() {
   return (
     <div className="relative">
       <SEO
-        title="BeeBuzz - Video Production & Creative Agency | Post, 3D & AI Solutions"
+        title="BeeBuzz - BeeBuzz | Execution-First Media | Post, 3D & AI Video Systems"
         description="Execution partners for brands who care about conversions, not just creatives. We partner with startups, brands, and VCs to build video systems across post, 3D, and AI that drive real performance."
         keywords="video production, creative agency, post production, 3D animation, AI video, brand videos, startup videos, marketing videos, video marketing, creative services, video systems, BeeBuzz"
         url="https://beebuzz.co.in"
