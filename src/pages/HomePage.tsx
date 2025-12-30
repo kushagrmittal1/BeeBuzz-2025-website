@@ -83,7 +83,7 @@ export default function HomePage() {
   }, [isPreloaderComplete]);
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <SEO
         title="BeeBuzz - BeeBuzz | Execution-First Media | Post, 3D & AI Video Systems"
         description="Execution partners for brands who care about conversions, not just creatives. We partner with startups, brands, and VCs to build video systems across post, 3D, and AI that drive real performance."
@@ -94,7 +94,7 @@ export default function HomePage() {
         <AnimatedGridBg />
       </div>
 
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-[100svh] px-8 text-center">
+      <main className="relative mt-20 md:mt-0 z-10 flex flex-col items-center justify-center min-h-[100svh] px-8 text-center">
         <h1
           ref={heroTextRef}
           className="text-3xl md:text-6xl lg:text-[4.3vw] text-[#FFF7EA] max-w-6xl tracking-tight mb-4 md:mb-8"
@@ -121,7 +121,7 @@ export default function HomePage() {
           Book a call
         </a>
 
-        <div className="absolute bottom-8 md:bottom-30 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-4 md:gap-5 w-full md:w-auto justify-center items-center">
+        <div className="relative mt-10 md:mt-0 md:absolute bottom-8 md:bottom-30 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-4 md:gap-5 w-full md:w-auto justify-center items-center">
           <div
             ref={(el: HTMLDivElement | null) => {
               if (el) {
