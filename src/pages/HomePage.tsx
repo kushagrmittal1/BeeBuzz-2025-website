@@ -83,9 +83,9 @@ export default function HomePage() {
   }, [isPreloaderComplete]);
 
   return (
-    <div className="relative ">
+    <div className="relative">
       <SEO
-        title="BeeBuzz - BeeBuzz | Execution-First Media | Post, 3D & AI Video Systems"
+        title="BeeBuzz - Video Production & Creative Agency | Post, 3D & AI Solutions"
         description="Execution partners for brands who care about conversions, not just creatives. We partner with startups, brands, and VCs to build video systems across post, 3D, and AI that drive real performance."
         keywords="video production, creative agency, post production, 3D animation, AI video, brand videos, startup videos, marketing videos, video marketing, creative services, video systems, BeeBuzz"
         url="https://beebuzz.co.in"
@@ -94,7 +94,7 @@ export default function HomePage() {
         <AnimatedGridBg />
       </div>
 
-      <main className="relative mt-20 md:mt-0 z-10 flex flex-col items-center justify-center min-h-[100svh] px-8 text-center">
+      <main className="relative z-10 flex flex-col items-center justify-center min-h-[100svh] px-8 text-center">
         <h1
           ref={heroTextRef}
           className="text-3xl md:text-6xl lg:text-[4.3vw] text-[#FFF7EA] max-w-6xl tracking-tight mb-4 md:mb-8"
@@ -113,15 +113,14 @@ export default function HomePage() {
         </p>
 
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd4h0aDIi5hdXQzFDwWiNagrhRvYzgalKylhy7bhsVGIREvgg/viewform?usp=publish-editor"
-          target="_blank"
+          href="mailto:bd@beebuzz.co.in"
           ref={heroBtnRef}
           className="bg-orange-500 text-sm md:text-base px-4 md:px-10 py-2 md:py-3 rounded-full text-white hover:bg-orange-600 transition-colors mb-8 cursor-pointer"
         >
           Book a call
         </a>
 
-        <div className="relative mt-10 md:mt-0 md:absolute bottom-8 md:bottom-30 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-4 md:gap-5 w-full md:w-auto justify-center items-center">
+        <div className="absolute bottom-8 md:bottom-30 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-4 md:gap-5 w-full md:w-auto justify-center items-center">
           <div
             ref={(el: HTMLDivElement | null) => {
               if (el) {

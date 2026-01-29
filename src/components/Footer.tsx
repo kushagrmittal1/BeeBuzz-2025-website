@@ -4,9 +4,9 @@ const Footer: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
       });
     }
   };
@@ -47,18 +47,9 @@ const Footer: React.FC = () => {
     {
       name: "X/Twitter",
       icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
-            <path
-              d="M22.162 2.974h-4.19l-5.97 7.98-5.97-7.98H2.162l7.98 10.66-7.98 10.66h4.19l5.97-7.98 5.97 7.98h4.19l-7.98-10.66 7.98-10.66zm-6.13 15.32l-3.03-4.05-3.03 4.05H5.97l4.05-5.41-4.05-5.41h3.03l3.03 4.05 3.03-4.05h3.03l-4.05 5.41 4.05 5.41h-3.03z"
-              fill="currentColor"
-            />
+            <path d="M22.162 2.974h-4.19l-5.97 7.98-5.97-7.98H2.162l7.98 10.66-7.98 10.66h4.19l5.97-7.98 5.97 7.98h4.19l-7.98-10.66 7.98-10.66zm-6.13 15.32l-3.03-4.05-3.03 4.05H5.97l4.05-5.41-4.05-5.41h3.03l3.03 4.05 3.03-4.05h3.03l-4.05 5.41 4.05 5.41h-3.03z" fill="currentColor"/>
           </g>
         </svg>
       ),
@@ -123,10 +114,7 @@ const Footer: React.FC = () => {
     { name: "About us", href: "/about", scrollTo: "why-work-with-us" },
     { name: "Services", href: "/services", scrollTo: "what-we-do" },
     { name: "Work", href: "/work" },
-    {
-      name: "Contact",
-      href: "https://docs.google.com/forms/d/e/1FAIpQLSd4h0aDIi5hdXQzFDwWiNagrhRvYzgalKylhy7bhsVGIREvgg/viewform?usp=publish-editor",
-    },
+    { name: "Contact", href: "mailto:bd@beebuzz.co.in" },
   ];
 
   // Socials links with icons
@@ -167,18 +155,9 @@ const Footer: React.FC = () => {
       name: "X/Twitter",
       href: "https://x.com/beebuzzmedia?s=21&t=VnQCwc7gu3mCkMKzwDTmlQ",
       icon: (
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
-            <path
-              d="M22.162 2.974h-4.19l-5.97 7.98-5.97-7.98H2.162l7.98 10.66-7.98 10.66h4.19l5.97-7.98 5.97 7.98h4.19l-7.98-10.66 7.98-10.66zm-6.13 15.32l-3.03-4.05-3.03 4.05H5.97l4.05-5.41-4.05-5.41h3.03l3.03 4.05 3.03-4.05h3.03l-4.05 5.41 4.05 5.41h-3.03z"
-              fill="currentColor"
-            />
+            <path d="M22.162 2.974h-4.19l-5.97 7.98-5.97-7.98H2.162l7.98 10.66-7.98 10.66h4.19l5.97-7.98 5.97 7.98h4.19l-7.98-10.66 7.98-10.66zm-6.13 15.32l-3.03-4.05-3.03 4.05H5.97l4.05-5.41-4.05-5.41h3.03l3.03 4.05 3.03-4.05h3.03l-4.05 5.41 4.05 5.41h-3.03z" fill="currentColor"/>
           </g>
         </svg>
       ),

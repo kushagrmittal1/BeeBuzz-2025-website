@@ -188,11 +188,7 @@ export default function Cta() {
         data-driven strategy — this is where it starts.
       </p>
 
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSd4h0aDIi5hdXQzFDwWiNagrhRvYzgalKylhy7bhsVGIREvgg/viewform?usp=publish-editor"
-        target="_blank"
-        className="bg-orange-500  px-6 md:px-10 py-2 md:py-3 rounded-full text-sm md:text-base text-white hover:bg-orange-600 transition-colors cursor-pointer relative z-[10]"
-      >
+      <a href="mailto:bd@beebuzz.co.in" className="bg-orange-500  px-6 md:px-10 py-2 md:py-3 rounded-full text-sm md:text-base text-white hover:bg-orange-600 transition-colors cursor-pointer relative z-[10]">
         Book a call
       </a>
     </div>

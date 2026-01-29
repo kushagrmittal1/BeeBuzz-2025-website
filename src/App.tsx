@@ -14,6 +14,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Preloader from "./components/Preloader";
 import { PreloaderProvider, usePreloader } from "./contexts/PreloaderContext";
+import PreloaderNew from "./components/PreloaderNew";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,7 +95,7 @@ function App() {
     <HelmetProvider>
       <PreloaderProvider>
         <LenisController />
-        <Preloader/>
+        <PreloaderNew />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

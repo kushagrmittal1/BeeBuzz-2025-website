@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AnimatedSplitText from "./AnimatedSplitText";
-import {
-  HOME_PAGE_PROJECTS,
-  PROJECTS_DATA,
-  fetchVideoDetails,
-  type Project,
-} from "../data/projectsData";
+import { HOME_PAGE_PROJECTS, PROJECTS_DATA, fetchVideoDetails, type Project } from "../data/projectsData";
 
 export const PortfolioNew = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -18,7 +13,7 @@ export const PortfolioNew = () => {
     const loadProjects = async () => {
       setLoading(true);
       const results: Project[] = [];
-
+  
       for (const project of HOME_PAGE_PROJECTS) {
         try {
           // Fetch real YouTube video data to get actual title
@@ -27,7 +22,7 @@ export const PortfolioNew = () => {
             // Update project with real YouTube title
             const updatedProject = {
               ...project,
-              title: videoData.title,
+              title: videoData.title
             };
             results.push(updatedProject);
           } else {
@@ -62,11 +57,11 @@ export const PortfolioNew = () => {
           duration={1}
           tag="h2"
         >
-          Our work
+        Our work
         </AnimatedSplitText>
       </div>
       {loading ? (
-        <div className="text-center text-white">Loading projects....</div>
+        <div className="text-center text-white">Loading projects...</div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-10">
           {projects.map((project) => (
@@ -79,13 +74,13 @@ export const PortfolioNew = () => {
                 <img
                   src={project.thumbnail}
                   alt={project.title}
-                  className="w-full h-50 md:h-40 lg:h-50 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-30 lg:h-50 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="bg-white/20 rounded-full p-3">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M8 5V19L19 12L8 5Z" fill="white" />
+                      <path d="M8 5V19L19 12L8 5Z" fill="white"/>
                     </svg>
                   </div>
                 </div>
@@ -128,11 +123,8 @@ export const PortfolioNew = () => {
         </div>
       )}
 
-      <div className="text-center mt-10 lg:mt-20">
-        <Link
-          to="/work"
-          className="text-sm md:text-base text-white px-4 md:px-6 py-2 rounded-full border border-white/50  hover:bg-gray-200 transition-colors"
-        >
+      <div className="text-center mt-10 lg:mt-20"> 
+        <Link to="/work" className="text-sm md:text-base text-white px-4 md:px-6 py-2 rounded-full border border-white/50  hover:bg-gray-200 transition-colors">
           View More
         </Link>
       </div>

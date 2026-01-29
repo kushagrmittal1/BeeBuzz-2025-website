@@ -84,10 +84,10 @@ export default function Navbar() {
 
   const scrollToSection = (sectionId: string) => {
     // If we're not on the homepage, navigate there first
-    if (location.pathname !== "/") {
-      navigate("/");
+    if (location.pathname !== '/') {
+      navigate('/');
       // Store the section ID to scroll to after navigation
-      sessionStorage.setItem("scrollToSection", sectionId);
+      sessionStorage.setItem('scrollToSection', sectionId);
       // Close mobile menu if open
       if (menuOpen) {
         setMenuOpen(false);
@@ -98,9 +98,9 @@ export default function Navbar() {
     // If we're on the homepage, scroll to the section
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
       });
     }
     // Close mobile menu if open
@@ -129,20 +129,20 @@ export default function Navbar() {
 
   // Handle scroll to section after navigation
   useEffect(() => {
-    if (location.pathname === "/") {
-      const sectionId = sessionStorage.getItem("scrollToSection");
+    if (location.pathname === '/') {
+      const sectionId = sessionStorage.getItem('scrollToSection');
       if (sectionId) {
         // Small delay to ensure the page has loaded
         setTimeout(() => {
           const element = document.getElementById(sectionId);
           if (element) {
-            element.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
             });
           }
           // Clear the stored section ID
-          sessionStorage.removeItem("scrollToSection");
+          sessionStorage.removeItem('scrollToSection');
         }, 100);
       }
     }
@@ -223,7 +223,7 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 text-sm">
-          {navLinks.map((link) =>
+          {navLinks.map((link) => (
             link.scrollTo ? (
               <button
                 key={link.label}
@@ -241,15 +241,11 @@ export default function Navbar() {
                 {link.label}
               </Link>
             )
-          )}
+          ))}
         </nav>
 
         {/* Header CTA (desktop) */}
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd4h0aDIi5hdXQzFDwWiNagrhRvYzgalKylhy7bhsVGIREvgg/viewform?usp=publish-editor"
-          target="_blank"
-          className="hidden md:inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors cursor-pointer"
-        >
+        <a  href="mailto:bd@beebuzz.co.in" className="hidden md:inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors cursor-pointer">
           Get a Quote
         </a>
 
@@ -286,7 +282,7 @@ export default function Navbar() {
           }}
         >
           <nav className="flex flex-col items-center gap-8 text-lg">
-            {navLinks.map((link) =>
+            {navLinks.map((link) => (
               link.scrollTo ? (
                 <button
                   key={link.label}
@@ -305,15 +301,11 @@ export default function Navbar() {
                   {link.label}
                 </a>
               )
-            )}
+            ))}
           </nav>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd4h0aDIi5hdXQzFDwWiNagrhRvYzgalKylhy7bhsVGIREvgg/viewform?usp=publish-editor"
-            target="_blank"
-            className="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors cursor-pointer text-lg mt-8"
-          >
+          <button className="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors cursor-pointer text-lg mt-8">
             Get a Quote
-          </a>
+          </button>
         </div>
       </header>
     </div>

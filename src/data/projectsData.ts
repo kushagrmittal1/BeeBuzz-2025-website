@@ -1,3 +1,8 @@
+const tetrCollegeVideoUrl =
+  "/assets/videos/projects/Tetr College x BeeBuzz.mp4";
+const tetrCollegeThumbnail =
+  "/assets/images/thumbnails/Tetr College x BeeBuzz.jpg";
+
 // Shared project data between PortfolioNew and ProjectDetailPage
 
 // Helper to extract YouTube video ID from URL
@@ -43,8 +48,8 @@ export const HOME_PAGE_PROJECTS = [
     relatedProjects: [],
   },
   {
-    id:"31sCtmQOHJU",
-    title:"Agra Sisters Became Crorepati Farmers with ONE Secret Strategy",
+    id: "31sCtmQOHJU",
+    title: "Agra Sisters Became Crorepati Farmers with ONE Secret Strategy",
     videoUrl: "https://www.youtube.com/shorts/31sCtmQOHJU",
     thumbnail: "https://img.youtube.com/vi/31sCtmQOHJU/hqdefault.jpg",
     category: "Post Production",
@@ -788,8 +793,8 @@ export const PROJECTS_DATA: Project[] = [
     relatedProjects: [],
   },
   {
-    id:"31sCtmQOHJU",
-    title:"Agra Sisters Became Crorepati Farmers with ONE Secret Strategy",
+    id: "31sCtmQOHJU",
+    title: "Agra Sisters Became Crorepati Farmers with ONE Secret Strategy",
     videoUrl: "https://www.youtube.com/watch?v=31sCtmQOHJU",
     thumbnail: "https://img.youtube.com/vi/31sCtmQOHJU/hqdefault.jpg",
     category: "Post Production",
@@ -1990,6 +1995,283 @@ export const PROJECTS_DATA: Project[] = [
     relatedProjects: [],
   },
 
+  //newww
+  {
+    id: "YhcTiTiZhjs",
+    title: "Sahi App Performance Marketing Ad-1",
+    videoUrl: "https://www.youtube.com/watch?v=YhcTiTiZhjs",
+    thumbnail: "https://img.youtube.com/vi/YhcTiTiZhjs/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "t_dnAX7YDbg",
+    title: "Sahi App Performance Marketing Ad-2",
+    videoUrl: "https://www.youtube.com/watch?v=t_dnAX7YDbg",
+    thumbnail: "https://img.youtube.com/vi/t_dnAX7YDbg/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "8vZYpqagVhg",
+    title: "Ozone Delhi T3 Airport A Campaign",
+    videoUrl: "https://www.youtube.com/shorts/8vZYpqagVhg",
+    thumbnail: "https://img.youtube.com/vi/8vZYpqagVhg/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "87vyybTOS4k",
+    title: "Lit School Performance Ad-1",
+    videoUrl: "https://www.youtube.com/shorts/87vyybTOS4k",
+    thumbnail: "https://img.youtube.com/vi/87vyybTOS4k/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "99ht5Ujru7U",
+    title: "7 Figure Secrets from Swiggy's Design Head Revealed",
+    videoUrl: "https://www.youtube.com/watch?v=99ht5Ujru7U",
+    thumbnail: "https://img.youtube.com/vi/99ht5Ujru7U/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "My Client",
+    relatedProjects: [],
+  },
+  {
+    id: "H-8M2wc71lw",
+    title:
+      "Ex-Google Engineer Reveals TOP 5 EASY Revenue Streams From Content Creation",
+    videoUrl: "https://www.youtube.com/watch?v=H-8M2wc71lw&t=110s ",
+    thumbnail: "https://img.youtube.com/vi/H-8M2wc71lw/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "My Client",
+    relatedProjects: [],
+  },
+  {
+    id: "_3GaWtorojM",
+    title: "Every Aspiring Content Creator Should Watch This",
+    videoUrl: "https://www.youtube.com/shorts/_3GaWtorojM",
+    thumbnail: "https://img.youtube.com/vi/_3GaWtorojM/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "My Client",
+    relatedProjects: [],
+  },
+  {
+    id: "wVWNhjiana4",
+    title: "The #1 Content Creation Mistake That's Costing You VIEWERS",
+    videoUrl: "https://www.youtube.com/shorts/wVWNhjiana4",
+    thumbnail: "https://img.youtube.com/vi/wVWNhjiana4/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "My Client",
+    relatedProjects: [],
+  },
+  {
+    id: "EKKYkFrTgXw",
+    title: "What Every Small Business Should Do Before Selling",
+    videoUrl: "https://www.youtube.com/shorts/EKKYkFrTgXw",
+    thumbnail: "https://img.youtube.com/vi/EKKYkFrTgXw/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "My Client",
+    relatedProjects: [],
+  },
+  {
+    id: "4HWJoH5626c",
+    title: "Should You Quit Your Job to Become a Content Creator?",
+    videoUrl: "https://www.youtube.com/shorts/4HWJoH5626c",
+    thumbnail: "https://img.youtube.com/vi/4HWJoH5626c/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "07n2b25A0DE",
+    title:
+      "“Dilli meri sabse badi love story hai” Ft. Durjoy Datta | AudBaatein with @Kullubaazi",
+    videoUrl: "https://www.youtube.com/watch?v=07n2b25A0DE",
+    thumbnail: "https://img.youtube.com/vi/07n2b25A0DE/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "8DoHkM4OxRI",
+    title: "Unknown Title",
+    videoUrl: "https://www.youtube.com/watch?v=8DoHkM4OxRI&t=25s",
+    thumbnail: "https://img.youtube.com/vi/8DoHkM4OxRI/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "wNctn4fVzgU",
+    title: "Main Delhi miss karta hoon par...",
+    videoUrl: "https://www.youtube.com/shorts/wNctn4fVzgU",
+    thumbnail: "https://img.youtube.com/vi/wNctn4fVzgU/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "LyN75s6hCS4",
+    title:
+      "Jab duniya hoti hai thodi zyada noisy, creativity aur bhi loud ho jaati hai ✨️ #durjoydutta #kullu",
+    videoUrl: "https://www.youtube.com/shorts/LyN75s6hCS4",
+    thumbnail: "https://img.youtube.com/vi/LyN75s6hCS4/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "DQWC4HLj6i1",
+    title:
+      "Your burning questions answered! And it's all coming straight from the brilliant brain behind your favourite books.",
+    videoUrl: "https://www.instagram.com/reel/DQWC4HLj6i1/?hl=en",
+    thumbnail: "https://img.youtube.com/vi/LyN75s6hCS4/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "HIa5oIMGn_E",
+    title: "Ozone Safe Brand Film",
+    videoUrl: "https://youtu.be/HIa5oIMGn_E",
+    thumbnail: "https://img.youtube.com/vi/HIa5oIMGn_E/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "gIHHc6YJtlI",
+    title: "Ozone Acura Safe Installation Video",
+    videoUrl: "https://youtu.be/gIHHc6YJtlI",
+    thumbnail: "https://img.youtube.com/vi/gIHHc6YJtlI/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "dXfinaLx-FY",
+    title: "Maxximus Product Dashboard Video",
+    videoUrl: "https://youtu.be/dXfinaLx-FY",
+    thumbnail: "https://img.youtube.com/vi/dXfinaLx-FY/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "oQI63K7mDD0",
+    title:
+      "AI, Aladdin & the Future of Investing: Secrets from Rishi Kohli, CIO of Jio-BlackRock",
+    videoUrl: "https://www.youtube.com/watch?v=oQI63K7mDD0&t=1s",
+    thumbnail: "https://img.youtube.com/vi/oQI63K7mDD0/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "M-LPqgAogQ4",
+    title: "Livspace ₹99k Perfomance Marketing Ad",
+    videoUrl: "https://youtube.com/shorts/M-LPqgAogQ4",
+    thumbnail: "https://img.youtube.com/vi/M-LPqgAogQ4/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "788r14QDOac",
+    title: "Livspace ₹99k Performance Marketing Ad -2",
+    videoUrl: "https://youtube.com/shorts/788r14QDOac",
+    thumbnail: "https://img.youtube.com/vi/788r14QDOac/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "UfnNjOZAkV0",
+    title:
+      "He Quit His Flipkart Job & built a 1,000 Crore/Year Cloud Kitchen!  @soniashenoyofficial ​",
+    videoUrl: "https://www.youtube.com/watch?v=UfnNjOZAkV0",
+    thumbnail: "https://img.youtube.com/vi/UfnNjOZAkV0/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "68wb6QK2-dc",
+    title: "How He Built a ₹6Cr+ Corpus At The Age Of 45? | FIRE Journey",
+    videoUrl: "https://www.youtube.com/watch?v=68wb6QK2-dc",
+    thumbnail: "https://img.youtube.com/vi/68wb6QK2-dc/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "arwsTAJWRjs",
+    title: "From Rs 2,500 Salary To Owning a Luxury Homestay In The Mountains",
+    videoUrl: "https://www.youtube.com/watch?v=arwsTAJWRjs",
+    thumbnail: "https://img.youtube.com/vi/arwsTAJWRjs/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "KoyAVqA2j50",
+    title: "LIT School Ad-2",
+    videoUrl: "https://youtube.com/shorts/KoyAVqA2j50",
+    thumbnail: "https://img.youtube.com/vi/KoyAVqA2j50/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "ORF3W_kX684",
+    title: "Masters' Union x BeeBuzz | Why did Micromax fail?",
+    videoUrl: "https://youtu.be/ORF3W_kX684",
+    thumbnail: "https://img.youtube.com/vi/ORF3W_kX684/hqdefault.jpg",
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
+  {
+    id: "DSZ6JTqDKLQ",
+    title: "Tetr College x BeeBuzz",
+    videoUrl: tetrCollegeVideoUrl,
+    thumbnail: tetrCollegeThumbnail,
+    category: "Post Production",
+    subcategory: "Short-Form Campaigns",
+    client: "",
+    relatedProjects: [],
+  },
 ];
 
 // Function to fetch video details from YouTube oEmbed with timeout
@@ -2001,19 +2283,19 @@ export const fetchVideoDetails = async (url: string): Promise<Video | null> => {
     // oEmbed endpoint (no API key required) with timeout
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-    
+
     const oembedUrl = `https://www.youtube.com/oembed?url=${encodeURIComponent(
-      url
+      url,
     )}&format=json`;
-    const res = await fetch(oembedUrl, { 
+    const res = await fetch(oembedUrl, {
       signal: controller.signal,
       headers: {
-        'Accept': 'application/json',
-      }
+        Accept: "application/json",
+      },
     });
-    
+
     clearTimeout(timeoutId);
-    
+
     if (!res.ok) throw new Error("oEmbed fetch failed");
     const data = await res.json();
     return {
@@ -2044,6 +2326,6 @@ export const getProjectWithOrientation = (project: Project): Project => {
 };
 
 // Pre-processed projects with orientations for faster initial load
-export const PREPROCESSED_PROJECTS_DATA: Project[] = PROJECTS_DATA.map(project => 
-  getProjectWithOrientation(project)
+export const PREPROCESSED_PROJECTS_DATA: Project[] = PROJECTS_DATA.map(
+  (project) => getProjectWithOrientation(project),
 );
