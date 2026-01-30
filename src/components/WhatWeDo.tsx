@@ -22,9 +22,9 @@ const WhatWeDo: React.FC = () => {
 
   const services: Service[] = [
     {
-      title: "Fast. Reliable. Scalable",
+      title: "All things Content",
       description:
-        "We build content that performs, content that speaks, converts, and stays. No fluff. Just sharp storytelling, clean design, and execution that actually drives outcomes. If it’s not moving the needle, we’re not interested.",
+        "From the first idea to the final distribution, we handle everything with speed, consistency, and obsession for outcomes. We’re execution-first. What we really do is help brands win attention at scale.",
       icon: (
         <ResponsiveSVG>
 

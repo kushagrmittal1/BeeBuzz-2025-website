@@ -358,13 +358,13 @@ const features = [
       "We're driven by metrics. Every edit is optimized for engagement, retention, and impact, not just delivery.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 120 120" fill="none">
-      <path d="M52.1094 30.2073V17.7656" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M35.7644 39.8922L25.0312 33.6953" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M69.0703 39.537L79.0395 33.7812" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7721 116.566V96.9501C22.7721 87.0958 21.2648 85.3347 15.1398 77.0179C9.31178 69.1046 6.04688 59.4018 6.04688 49.2911C6.04688 20.2285 29.0722 4.26996 52.1095 2.68404C75.1388 1.10882 98.1483 13.8976 98.1483 42.3194C98.1483 49.9535 106.663 53.2701 110.995 57.6421C114.285 60.9616 113.443 64.831 110.123 66.7655C106.175 69.0655 102.306 70.4832 104.106 77.2636L102.051 80.8861C103.515 82.8199 103.101 85.2358 101.547 87.0441C100.456 91.1541 104.652 94.9244 100.584 98.9939C98.9655 100.614 96.1022 101.765 91.2327 101.765C78.2811 101.765 75.7191 106.504 75.7191 111.921V116.566H22.7721Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8953 65.6119C21.0364 60.6599 19.5312 55.0426 19.5312 49.3246C19.5312 31.3341 34.1154 16.75 52.1059 16.75C70.0963 16.75 84.6805 31.3341 84.6805 49.3246C84.6805 55.0426 83.1753 60.6599 80.3164 65.6119L67.7784 58.3731C69.3669 55.622 70.2031 52.5013 70.2029 49.3246C70.2029 39.3298 62.1007 31.2276 52.1059 31.2276C42.111 31.2276 34.0088 39.3298 34.0088 49.3246C34.0088 52.5013 34.845 55.622 36.4333 58.3731L23.8953 65.6119Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M53.0444 54.4762C55.8891 53.9598 57.7767 51.2351 57.2603 48.3903C56.7439 45.5455 54.0191 43.658 51.1744 44.1744C48.3296 44.6908 46.4421 47.4155 46.9584 50.2603C47.4748 53.1051 50.1996 54.9926 53.0444 54.4762Z" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M55.1641 44.0335L63.8166 29.0469" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M52.1094 30.2073V17.7656" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M35.7644 39.8922L25.0312 33.6953" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M69.0703 39.537L79.0395 33.7812" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7721 116.566V96.9501C22.7721 87.0958 21.2648 85.3347 15.1398 77.0179C9.31178 69.1046 6.04688 59.4018 6.04688 49.2911C6.04688 20.2285 29.0722 4.26996 52.1095 2.68404C75.1388 1.10882 98.1483 13.8976 98.1483 42.3194C98.1483 49.9535 106.663 53.2701 110.995 57.6421C114.285 60.9616 113.443 64.831 110.123 66.7655C106.175 69.0655 102.306 70.4832 104.106 77.2636L102.051 80.8861C103.515 82.8199 103.101 85.2358 101.547 87.0441C100.456 91.1541 104.652 94.9244 100.584 98.9939C98.9655 100.614 96.1022 101.765 91.2327 101.765C78.2811 101.765 75.7191 106.504 75.7191 111.921V116.566H22.7721Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8953 65.6119C21.0364 60.6599 19.5312 55.0426 19.5312 49.3246C19.5312 31.3341 34.1154 16.75 52.1059 16.75C70.0963 16.75 84.6805 31.3341 84.6805 49.3246C84.6805 55.0426 83.1753 60.6599 80.3164 65.6119L67.7784 58.3731C69.3669 55.622 70.2031 52.5013 70.2029 49.3246C70.2029 39.3298 62.1007 31.2276 52.1059 31.2276C42.111 31.2276 34.0088 39.3298 34.0088 49.3246C34.0088 52.5013 34.845 55.622 36.4333 58.3731L23.8953 65.6119Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M53.0444 54.4762C55.8891 53.9598 57.7767 51.2351 57.2603 48.3903C56.7439 45.5455 54.0191 43.658 51.1744 44.1744C48.3296 44.6908 46.4421 47.4155 46.9584 50.2603C47.4748 53.1051 50.1996 54.9926 53.0444 54.4762Z" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M55.1641 44.0335L63.8166 29.0469" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     ),
     bgPattern: "l-shapes",
@@ -374,20 +374,20 @@ const features = [
     description:
       "With streamlined SOPs and clear workflows, we reduce your dependency and slash turnaround times.",
     icon: (
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 120 120" fill="none">
-<path d="M31.9487 31.9791L19.8438 19.8516" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.6672 44.4567L10.5625 41.8594" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M44.3972 22.6822L41.8047 10.5547" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M86.9688 87.1094L99.0737 99.2369" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M96.25 74.6328L108.355 77.2302" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M74.5156 96.4062L77.1081 108.534" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M30.7304 54.7656C29.5496 54.9376 28.3746 55.2098 27.2154 55.583C21.7717 57.3353 17.3364 61.1035 14.7268 66.1935L4.91644 85.3271C-0.474191 95.8413 3.67744 108.789 14.1711 114.189C19.2514 116.804 25.0471 117.279 30.4905 115.527C35.9342 113.774 40.3695 110.006 42.9792 104.916L52.7895 85.7825C57.0056 77.559 55.3845 67.8469 49.4571 61.4213L47.8775 60.0509" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26.194 71.6562C26.1295 71.7693 26.0672 71.8845 26.0072 72.0015L16.1966 91.1354C14.0004 95.4187 15.6917 100.694 19.9671 102.894C24.2423 105.094 29.5073 103.4 31.7035 99.1159L41.5138 79.9823C41.9392 79.1526 42.2188 78.2859 42.3619 77.4115" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26.6634 69.7906L33.8259 44.4531L40.5467 52.4353L51.012 48.0496L43.4919 74.634C42.8595 76.8386 41.4027 78.6674 39.3898 79.784C37.377 80.9006 35.0567 81.1666 32.8563 80.533L32.5485 80.4425C27.9943 79.1311 25.3546 74.3536 26.6634 69.7906Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M87.5744 63.5566C88.788 63.6003 89.7792 63.5559 90.3979 63.3825C95.9042 61.8396 100.48 58.2439 103.281 53.2576L113.813 34.5133C116.615 29.527 117.31 23.7427 115.771 18.2257C114.231 12.7087 110.642 8.1248 105.665 5.31757C100.688 2.51057 94.9148 1.81464 89.4083 3.35728C83.902 4.90015 79.3265 8.49569 76.5246 13.4822L65.9923 32.2268C63.1906 37.213 62.4956 42.9973 64.0353 48.5143C64.8962 51.5986 66.3976 54.3915 68.424 56.7452L70.1851 59.0627" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M92.1084 47.2347C92.1496 47.1659 92.19 47.0961 92.2296 47.0258L102.762 28.2814C105.12 24.0849 103.63 18.7494 99.4421 16.3871C95.2537 14.0247 89.9282 15.5171 87.5703 19.7134L77.038 38.458C76.8774 38.7439 76.7346 39.035 76.6094 39.3303" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M91.9033 47.3526L84.7408 72.6901L78.02 64.7079L67.5547 69.0936L75.0748 42.5093C75.7072 40.3047 77.164 38.4758 79.1768 37.3592C81.1897 36.2428 83.51 35.9767 85.7104 36.6102L86.0182 36.7007C90.5724 38.0121 93.2121 42.7896 91.9033 47.3526Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 120 120" fill="none">
+        <path d="M31.9487 31.9791L19.8438 19.8516" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.6672 44.4567L10.5625 41.8594" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M44.3972 22.6822L41.8047 10.5547" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M86.9688 87.1094L99.0737 99.2369" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M96.25 74.6328L108.355 77.2302" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M74.5156 96.4062L77.1081 108.534" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M30.7304 54.7656C29.5496 54.9376 28.3746 55.2098 27.2154 55.583C21.7717 57.3353 17.3364 61.1035 14.7268 66.1935L4.91644 85.3271C-0.474191 95.8413 3.67744 108.789 14.1711 114.189C19.2514 116.804 25.0471 117.279 30.4905 115.527C35.9342 113.774 40.3695 110.006 42.9792 104.916L52.7895 85.7825C57.0056 77.559 55.3845 67.8469 49.4571 61.4213L47.8775 60.0509" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M26.194 71.6562C26.1295 71.7693 26.0672 71.8845 26.0072 72.0015L16.1966 91.1354C14.0004 95.4187 15.6917 100.694 19.9671 102.894C24.2423 105.094 29.5073 103.4 31.7035 99.1159L41.5138 79.9823C41.9392 79.1526 42.2188 78.2859 42.3619 77.4115" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M26.6634 69.7906L33.8259 44.4531L40.5467 52.4353L51.012 48.0496L43.4919 74.634C42.8595 76.8386 41.4027 78.6674 39.3898 79.784C37.377 80.9006 35.0567 81.1666 32.8563 80.533L32.5485 80.4425C27.9943 79.1311 25.3546 74.3536 26.6634 69.7906Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M87.5744 63.5566C88.788 63.6003 89.7792 63.5559 90.3979 63.3825C95.9042 61.8396 100.48 58.2439 103.281 53.2576L113.813 34.5133C116.615 29.527 117.31 23.7427 115.771 18.2257C114.231 12.7087 110.642 8.1248 105.665 5.31757C100.688 2.51057 94.9148 1.81464 89.4083 3.35728C83.902 4.90015 79.3265 8.49569 76.5246 13.4822L65.9923 32.2268C63.1906 37.213 62.4956 42.9973 64.0353 48.5143C64.8962 51.5986 66.3976 54.3915 68.424 56.7452L70.1851 59.0627" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M92.1084 47.2347C92.1496 47.1659 92.19 47.0961 92.2296 47.0258L102.762 28.2814C105.12 24.0849 103.63 18.7494 99.4421 16.3871C95.2537 14.0247 89.9282 15.5171 87.5703 19.7134L77.038 38.458C76.8774 38.7439 76.7346 39.035 76.6094 39.3303" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M91.9033 47.3526L84.7408 72.6901L78.02 64.7079L67.5547 69.0936L75.0748 42.5093C75.7072 40.3047 77.164 38.4758 79.1768 37.3592C81.1897 36.2428 83.51 35.9767 85.7104 36.6102L86.0182 36.7007C90.5724 38.0121 93.2121 42.7896 91.9033 47.3526Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
     ),
     bgPattern: "triangle-waves",
   },
@@ -397,11 +397,11 @@ const features = [
       "From motion to 3D, our high-quality animation and post systems bring your storytelling to life sharper, stronger, smarter.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 120 120" fill="none">
-      <path d="M28.0176 77.7422L14.75 106.194L29.3302 105.193L37.9347 117.006L50.3564 90.3676" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M69.6406 90.3676L82.0623 117.006L90.6668 105.193L105.247 106.194L91.9794 77.7422" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M59.9964 91.4225C84.4157 91.4225 104.212 71.6267 104.212 47.2073C104.212 22.788 84.4157 2.99219 59.9964 2.99219C35.577 2.99219 15.7812 22.788 15.7812 47.2073C15.7812 71.6267 35.577 91.4225 59.9964 91.4225Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M59.9959 78.3903C77.2181 78.3903 91.1794 64.429 91.1794 47.2069C91.1794 29.9847 77.2181 16.0234 59.9959 16.0234C42.7738 16.0234 28.8125 29.9847 28.8125 47.2069C28.8125 64.429 42.7738 78.3903 59.9959 78.3903Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M60.0194 27.1953L65.8968 39.1041L79.039 41.0139L69.5293 50.2835L71.7742 63.3727L60.0194 57.1928L48.2648 63.3727L50.5097 50.2835L41 41.0139L54.1422 39.1041L60.0194 27.1953Z" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28.0176 77.7422L14.75 106.194L29.3302 105.193L37.9347 117.006L50.3564 90.3676" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M69.6406 90.3676L82.0623 117.006L90.6668 105.193L105.247 106.194L91.9794 77.7422" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M59.9964 91.4225C84.4157 91.4225 104.212 71.6267 104.212 47.2073C104.212 22.788 84.4157 2.99219 59.9964 2.99219C35.577 2.99219 15.7812 22.788 15.7812 47.2073C15.7812 71.6267 35.577 91.4225 59.9964 91.4225Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M59.9959 78.3903C77.2181 78.3903 91.1794 64.429 91.1794 47.2069C91.1794 29.9847 77.2181 16.0234 59.9959 16.0234C42.7738 16.0234 28.8125 29.9847 28.8125 47.2069C28.8125 64.429 42.7738 78.3903 59.9959 78.3903Z" stroke="white" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M60.0194 27.1953L65.8968 39.1041L79.039 41.0139L69.5293 50.2835L71.7742 63.3727L60.0194 57.1928L48.2648 63.3727L50.5097 50.2835L41 41.0139L54.1422 39.1041L60.0194 27.1953Z" stroke="#FF7F00" stroke-width="3.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     ),
     bgPattern: "grid-circles",
@@ -557,7 +557,7 @@ export default function WhyWorkWithUs() {
   return (
     <div
       id="why-work-with-us"
-      className={`w-full flex mb-15 lg:mb-40 ${isMobileDevice ? "flex-col px-5" : ""}`}
+      className={`w-full flex mb-15 lg:mb-40 ${isMobileDevice ? "flex-col md:px-5" : ""}`}
       ref={containerRef}
     >
       {/* <div className="absolute top-0 left-0 w-full h-full z-[-1]">
@@ -625,9 +625,8 @@ export default function WhyWorkWithUs() {
             ref={(el) => {
               cardsRef.current[index] = el || null;
             }}
-            className={`relative h-[250px] w-[80%] flex items-center justify-center bg-[#101010] rounded-lg mb-10 p-5 md:p-10 shadow-[-1px_-15px_11px_0px_rgba(0,_0,_0,_0.1)] ${
-              isMobileDevice ? "mx-5 w-[90%]" : ""
-            }`}
+            className={`relative h-[250px] w-[80%] flex items-center justify-center bg-[#101010] rounded-lg mb-10 p-5 md:p-10 shadow-[-1px_-15px_11px_0px_rgba(0,_0,_0,_0.1)] ${isMobileDevice ? "mx-5 w-[90%]" : ""
+              }`}
           >
             <div className="flex flex-col items-start space-y-4">
               <div className="flex-shrink-0 mt-1">{feature.icon}</div>

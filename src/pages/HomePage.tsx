@@ -18,20 +18,18 @@ export default function HomePage() {
   const heroDescRef = useRef<HTMLParagraphElement>(null);
   const heroBtnRef = useRef<HTMLAnchorElement>(null);
   const heroStatsRef = useRef<HTMLDivElement[]>([]);
+  const splitTitleRef = useRef<SplitText | null>(null);
+  const splitDescRef = useRef<SplitText | null>(null);
   const { isPreloaderComplete } = usePreloader();
 
+  // Setup: run on mount – hide hero content immediately so no flash when preloader goes
   useGSAP(() => {
-    // Only run animations when preloader is complete
-    if (!isPreloaderComplete) return;
+    if (!heroTextRef.current || !heroDescRef.current) return;
 
-    // document.body.style.overflow = "hidden";
-
-    const splitTitle = new SplitText(heroTextRef.current, {
-      type: "words",
-    });
-    const splitDesc = new SplitText(heroDescRef.current, {
-      type: "lines",
-    });
+    const splitTitle = new SplitText(heroTextRef.current, { type: "words" });
+    const splitDesc = new SplitText(heroDescRef.current, { type: "lines" });
+    splitTitleRef.current = splitTitle;
+    splitDescRef.current = splitDesc;
 
     gsap.set([splitTitle.words, splitDesc.lines, heroBtnRef.current], {
       opacity: 0,
@@ -43,6 +41,15 @@ export default function HomePage() {
       opacity: 0,
       filter: "blur(10px)",
     });
+  }, []);
+
+  // Animation: run only when preloader is complete – reveal hero content
+  useGSAP(() => {
+    if (!isPreloaderComplete || !splitTitleRef.current || !splitDescRef.current)
+      return;
+
+    const splitTitle = splitTitleRef.current;
+    const splitDesc = splitDescRef.current;
 
     gsap.to(splitTitle.words, {
       y: 0,

@@ -4,40 +4,47 @@ import { usePreloader } from "../contexts/PreloaderContext";
 
 export default function PreloaderNew() {
   const preloaderRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoDesktopRef = useRef<HTMLVideoElement>(null);
+  const videoMobileRef = useRef<HTMLVideoElement>(null);
+  const completedRef = useRef(false);
   const { setPreloaderComplete, setPreloaderActive } = usePreloader();
 
   useEffect(() => {
-    // Disable scroll when preloader starts
-    document.body.style.overflow = 'hidden';
+    // Disable scroll only while preloader is running (don't re-apply after completion)
+    if (!completedRef.current) {
+      document.body.style.overflow = "hidden";
+    }
 
-    const video = videoRef.current;
     const preloader = preloaderRef.current;
+    const videoDesktop = videoDesktopRef.current;
+    const videoMobile = videoMobileRef.current;
 
-    if (!video || !preloader) return;
+    if (!preloader) return;
 
-    // Handle video end event
+    // Handle video end event (only run once)
     const handleVideoEnd = () => {
-      // Animate preloader to y: -100%
+      if (completedRef.current) return;
+      completedRef.current = true;
+
       gsap.to(preloader, {
         y: "-100%",
         duration: 0.8,
         ease: "power3.in",
         onComplete: () => {
+          document.body.style.removeProperty("overflow");
           setPreloaderComplete(true);
           setPreloaderActive(false);
-          // Re-enable scroll when preloader completes
-          document.body.style.overflow = 'unset';
         },
       });
     };
 
-    video.addEventListener("ended", handleVideoEnd);
+    videoDesktop?.addEventListener("ended", handleVideoEnd);
+    videoMobile?.addEventListener("ended", handleVideoEnd);
 
-    // Cleanup function
     return () => {
-      video.removeEventListener("ended", handleVideoEnd);
-      document.body.style.overflow = 'unset';
+      videoDesktop?.removeEventListener("ended", handleVideoEnd);
+      videoMobile?.removeEventListener("ended", handleVideoEnd);
+      document.body.style.removeProperty("overflow");
     };
   }, [setPreloaderComplete, setPreloaderActive]);
 
@@ -47,13 +54,23 @@ export default function PreloaderNew() {
       className="preloader fixed top-0 left-0 w-full h-full z-[99999999] bg-[#000000] overflow-hidden"
     >
       <div className="w-full h-full flex items-center justify-center">
+        {/* Mobile: 1x1 video, full width and centered */}
         <video
-          ref={videoRef}
+          ref={videoMobileRef}
+          src="/assets/videos/preloader/BeeBuzz logo 1x1  animation alpha(Transparent BG)_1.mp4"
+          autoPlay
+          muted
+          playsInline
+          className="md:hidden w-full h-full object-contain"
+        />
+        {/* Desktop: 16x9 video */}
+        <video
+          ref={videoDesktopRef}
           src="/assets/videos/preloader/BeeBuzz logo 16x9 animation alpha(Transparent BG)_1.mp4"
           autoPlay
           muted
           playsInline
-          className="w-full h-full object-contain"
+          className="hidden md:block w-full h-full object-contain"
         />
       </div>
     </div>

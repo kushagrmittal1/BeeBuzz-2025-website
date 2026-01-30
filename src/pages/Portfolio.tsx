@@ -14,13 +14,15 @@ import {
 
 const MAIN_CATEGORIES = [
   {
-    name: "Post Production",
+    name: "All Things Content",
     subcategories: [
       "Brand Campaigns",
       "Podcasts",
       "Explainer Videos",
       "Documentary Videos",
       "Short-Form Campaigns",
+      "Performance Marketing Campaigns",
+      "Product Explainer Films"
       // "Design Statics",
     ],
   },
@@ -56,7 +58,6 @@ export const Portfolio = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-  const [hasMore, setHasMore] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
   const navigate = useNavigate();
 
@@ -101,7 +102,7 @@ export const Portfolio = () => {
     const startIndex = 0;
     const endIndex = currentPage * PROJECTS_PER_PAGE;
     const projects = filteredProjects.slice(startIndex, endIndex);
-    
+
     // Add skeleton items when loading more
     if (loadingMore) {
       const skeletonCount = 6;
@@ -116,28 +117,34 @@ export const Portfolio = () => {
       }));
       return [...projects, ...skeletonItems];
     }
-    
+
     return projects;
   }, [filteredProjects, currentPage, loadingMore, selectedMainCategory]);
+
+  // Only show Load More when there are more filtered projects to display
+  const hasMore = useMemo(
+    () => currentPage * PROJECTS_PER_PAGE < filteredProjects.length,
+    [currentPage, filteredProjects.length]
+  );
 
   // Optimized project loading with caching and batch processing
   const loadProjects = useCallback(async () => {
     setLoading(true);
     const results: Project[] = [];
-    
+
     // Start with pre-processed data for immediate display
     setProjects(PREPROCESSED_PROJECTS_DATA);
     setLoading(false);
-    
+
     // Process projects in batches to avoid overwhelming the API
     const batchSize = 10;
     const totalBatches = Math.ceil(PROJECTS_DATA.length / batchSize);
-    
+
     for (let batchIndex = 0; batchIndex < totalBatches; batchIndex++) {
       const startIndex = batchIndex * batchSize;
       const endIndex = Math.min(startIndex + batchSize, PROJECTS_DATA.length);
       const batch = PROJECTS_DATA.slice(startIndex, endIndex);
-      
+
       // Process batch concurrently
       const batchPromises = batch.map(async (project) => {
         try {
@@ -145,7 +152,7 @@ export const Portfolio = () => {
           if (project.title || !project.videoUrl) {
             return getProjectWithOrientation(project);
           }
-          
+
           // Check cache first
           if (videoDetailsCache.has(project.videoUrl)) {
             const cachedData = videoDetailsCache.get(project.videoUrl);
@@ -154,7 +161,7 @@ export const Portfolio = () => {
               title: cachedData.title,
             });
           }
-          
+
           // Fetch video details only if needed
           const videoData = await fetchVideoDetails(project.videoUrl);
           if (videoData) {
@@ -172,10 +179,10 @@ export const Portfolio = () => {
           return getProjectWithOrientation(project);
         }
       });
-      
+
       const batchResults = await Promise.all(batchPromises);
       results.push(...batchResults);
-      
+
       // Update projects with enhanced data (titles from API)
       setProjects(prev => {
         const updated = [...prev];
@@ -187,14 +194,12 @@ export const Portfolio = () => {
         });
         return updated;
       });
-      
+
       // Small delay between batches to prevent API rate limiting
       if (batchIndex < totalBatches - 1) {
         await new Promise(resolve => setTimeout(resolve, 100));
       }
     }
-    
-    setHasMore(results.length >= PROJECTS_PER_PAGE);
   }, []);
 
   useEffect(() => {
@@ -223,10 +228,10 @@ export const Portfolio = () => {
   const loadMoreProjects = useCallback(async () => {
     if (hasMore && !loading && !loadingMore) {
       setLoadingMore(true);
-      
+
       // Simulate a small delay for better UX (optional)
       await new Promise(resolve => setTimeout(resolve, 300));
-      
+
       setCurrentPage(prev => prev + 1);
       setLoadingMore(false);
     }
@@ -283,11 +288,10 @@ export const Portfolio = () => {
                   setSelectedMainCategory(cat.name);
                   setSelectedSubCategory(null);
                 }}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
-                  selectedMainCategory === cat.name
-                    ? "bg-orange-500 text-white"
-                    : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white border border-white/20"
-                }`}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 ${selectedMainCategory === cat.name
+                  ? "bg-orange-500 text-white"
+                  : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white border border-white/20"
+                  }`}
                 type="button"
               >
                 {cat.name}
@@ -304,11 +308,10 @@ export const Portfolio = () => {
               return (
                 <div className="flex flex-wrap justify-center gap-2 mb-8">
                   <button
-                    className={`px-4 py-2 rounded-full text-xs font-medium transition-all duration-300 ${
-                      selectedSubCategory === null
-                        ? "bg-orange-500/80 text-white"
-                        : "bg-white/10 text-white/80 hover:bg-white/20 hover:text-white border border-white/20"
-                    }`}
+                    className={`px-4 py-2 rounded-full text-xs font-medium transition-all duration-300 ${selectedSubCategory === null
+                      ? "bg-orange-500/80 text-white"
+                      : "bg-white/10 text-white/80 hover:bg-white/20 hover:text-white border border-white/20"
+                      }`}
                     onClick={() => setSelectedSubCategory(null)}
                   >
                     All
@@ -316,11 +319,10 @@ export const Portfolio = () => {
                   {selectedCat.subcategories.map((sub) => (
                     <button
                       key={sub}
-                      className={`px-4 py-2 rounded-full text-xs font-medium transition-all duration-300 ${
-                        selectedSubCategory === sub
-                          ? "bg-orange-500/80 text-white"
-                          : "bg-white/10 text-white/80 hover:bg-white/20 hover:text-white border border-white/20"
-                      }`}
+                      className={`px-4 py-2 rounded-full text-xs font-medium transition-all duration-300 ${selectedSubCategory === sub
+                        ? "bg-orange-500/80 text-white"
+                        : "bg-white/10 text-white/80 hover:bg-white/20 hover:text-white border border-white/20"
+                        }`}
                       onClick={() => setSelectedSubCategory(sub)}
                     >
                       {sub}
@@ -364,11 +366,10 @@ export const Portfolio = () => {
           {/* Projects Grid */}
           {loading ? (
             <div
-              className={`grid gap-8 ${
-                selectedMainCategory === "Design"
-                  ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-              }`}
+              className={`grid gap-8 ${selectedMainCategory === "Design"
+                ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                }`}
             >
               {Array.from({ length: 12 }).map((_, index) => (
                 <div key={`initial-skeleton-${index}`}>
@@ -383,11 +384,10 @@ export const Portfolio = () => {
           ) : (
             <div
               key={`${selectedMainCategory}-${selectedSubCategory}-${currentPage}`}
-              className={`grid gap-8 ${
-                selectedMainCategory === "Design"
-                  ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-              }`}
+              className={`grid gap-8 ${selectedMainCategory === "Design"
+                ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                }`}
             >
               {displayedProjects.map((project, index) => {
                 // Render skeleton for loading state
@@ -408,11 +408,10 @@ export const Portfolio = () => {
                 return (
                   <div
                     key={project.id}
-                    className={`project-card cursor-pointer group ${
-                      actualProject.videoOrientation === "vertical"
-                        ? "sm:col-span-1 lg:col-span-1"
-                        : ""
-                    }`}
+                    className={`project-card cursor-pointer group ${actualProject.videoOrientation === "vertical"
+                      ? "sm:col-span-1 lg:col-span-1"
+                      : ""
+                      }`}
                     onClick={() => {
                       if (actualProject.category === "Design") {
                         handleImageClick(index);
@@ -422,16 +421,14 @@ export const Portfolio = () => {
                     }}
                   >
                     <div
-                      className={`relative overflow-hidden rounded-lg mb-4 ${
-                        selectedMainCategory === "Design" ? "aspect-square" : ""
-                      }`}
+                      className={`relative overflow-hidden rounded-lg mb-4 ${selectedMainCategory === "Design" ? "aspect-square" : ""
+                        }`}
                     >
                       <img
                         src={actualProject.thumbnail}
                         alt={actualProject.title || `Project ${actualProject.id}`}
-                        className={`w-full object-cover group-hover:scale-105 transition-transform duration-300 ${
-                          selectedMainCategory === "Design" ? "h-full" : "h-60"
-                        }`}
+                        className={`w-full object-cover group-hover:scale-105 transition-transform duration-300 ${selectedMainCategory === "Design" ? "h-full" : "h-60"
+                          }`}
                         loading="lazy"
                         decoding="async"
                       />
@@ -550,11 +547,10 @@ export const Portfolio = () => {
               <button
                 onClick={loadMoreProjects}
                 disabled={loadingMore}
-                className={`px-8 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2 mx-auto ${
-                  loadingMore
-                    ? "bg-orange-500/70 text-white/70 cursor-not-allowed"
-                    : "bg-orange-500 hover:bg-orange-600 text-white hover:scale-105"
-                }`}
+                className={`px-8 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2 mx-auto ${loadingMore
+                  ? "bg-orange-500/70 text-white/70 cursor-not-allowed"
+                  : "bg-orange-500 hover:bg-orange-600 text-white hover:scale-105"
+                  }`}
               >
                 {loadingMore ? (
                   <>
