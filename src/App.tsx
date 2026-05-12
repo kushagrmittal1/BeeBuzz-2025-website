@@ -8,13 +8,11 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import { HelmetProvider } from "react-helmet-async";
-
+import Preloader from "./components/Preloader";
 // Import gsap and ScrollTrigger for refresh
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Preloader from "./components/Preloader";
 import { PreloaderProvider, usePreloader } from "./contexts/PreloaderContext";
-import PreloaderNew from "./components/PreloaderNew";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,7 +93,7 @@ function App() {
     <HelmetProvider>
       <PreloaderProvider>
         <LenisController />
-        <PreloaderNew />
+        <Preloader />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
